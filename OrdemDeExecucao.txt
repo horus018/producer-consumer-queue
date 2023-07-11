@@ -1,0 +1,12 @@
+Essa é a ordem de execução pra cada projeto:
+
+- transacoes.producer: Lê do csv, cria e manda pra fila transacoes.financeiras
+
+- transacoes.suspeitas: Cria o exchange transacoes.suspeitas e as filas policia.federal e receita.federal
+
+- policia.federal: Lê da fila policia.federal e imprime as transações suspeitas no console
+
+- receita.federal: Lê da fila receita.federal e imprime as transações suspeitas no console
+
+- transacoes.consumer: Lê da fila transacoes.financeiras e manda a transação pro exchange transacoes.suspeitas caso a transacao tenha + de 40k se não imprime a transação no console
+

@@ -1,0 +1,3 @@
+br\com\transacoes\producer\Transacao.class
+br\com\transacoes\producer\TransacoesProducerApp.class
+br\com\transacoes\producer\LeitorArquivo.class
